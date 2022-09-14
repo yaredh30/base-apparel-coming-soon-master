@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color:  rgb(25, 25, 25);
+   font-size: 16px;
+   font-family: 'Josefin Sans', sans-serif;
+   outline: none;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 10px auto;
+    height: 100vh;
+    background-image: linear-gradient( 135deg,  hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: 800px;
+    
+}
+
+.img-logo {
+  margin: 30px;
+  
+
+}
+
+.img-hero {
+    width: 100%;
+    background-image: url(images/hero-mobile.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.hero-title {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color:  hsl(0, 6%, 24%);
+    font-size: 30px;
+}
+
+.colored {
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+}
+
+.para-hero {
+    width: 70%;
+    margin-left: 70px;
+    line-height: 1.4;
+    color: hsl(0, 36%, 70%);
+}
+
+.img-arrow {
+    border: none;
+    padding: 5px 25px; 
+    margin-left: -40px;
+    border-radius: 30px;
+    font-size: 2px !important;
+    height: 50px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    box-shadow: -1px -1px 10px hsl(0, 36%, 70%);
+    cursor: pointer;
+    
+}
+
+.email-el {
+    padding: 16px 25px;
+    width: 70%;
+    border-radius: 50px;
+    border: 2.3px solid hsl(0, 36%, 70%);
+    color: #000;
+    outline: none;
+    
+}
+
+.input-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    color: hsl(0, 36%, 70%);
+
+}
+
+
+.img-error {
+    margin-left: -100px;
+    position: relative;
+    top: -10px;
+    left: -20px;
+    display: none;
+    
+
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+.error-el {
+    font-size: 14px;
+    margin: 10px 80px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
+
+.success-el {
+    font-size: 14px;
+    margin: 10px 80px;
+    color: hsl(0, 36%, 70%);
+    display: none;
+    font-weight: 900;
+}
+
+
+
+.btn-submit {
+    border: none;
+    background-color: transparent;
+}
+
+@media(min-width: 900px) {
+   .container {
+    min-width: 900px;
+    height: 500px;
+    margin: 100px auto;
+    
+   }
+   .main {
+    display: flex;
+    flex-direction: row;
+   }
+
+   .img-hero {
+    width: 50%;
+    position: relative;
+    left: 450px;
+    object-fit: cover;
+    height: 500px;
+    top: -98px;
+    background-image: url("images/hero-desktop.jpg");
+   }
+   .section {
+     position: relative;
+     top: -500px;
+     width: 50%;
+
+   }
+}
